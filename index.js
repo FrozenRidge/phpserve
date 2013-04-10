@@ -14,7 +14,8 @@ var app = connect()
   .use(cgi)
   .use(function(req, res){
     console.log("no such file: %s", req.url)
-    res.end('Hello from Connect!\n')
+    res.statusCode = 404
+    res.end('not found\n')
   });
 
 
