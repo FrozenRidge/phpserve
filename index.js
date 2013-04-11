@@ -16,9 +16,9 @@ var app = connect()
     console.log("no such file: %s", req.url)
     res.statusCode = 404
     res.end('not found\n')
-  });
+  })
 
 
 var port = process.env.PORT || 8080
-http.createServer(app).listen(port);
+http.createServer(app).listen(port)
 console.log("server listening on http://localhost:%s", port)
