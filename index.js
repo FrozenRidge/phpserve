@@ -10,8 +10,8 @@ var options = {
 var cgi = gateway(process.cwd(), options)
 
 var app = connect()
-  .use(connect.static(process.cwd()))
   .use(cgi)
+  .use(connect.static(process.cwd()))
   .use(function(req, res){
     console.log("no such file: %s", req.url)
     res.statusCode = 404
