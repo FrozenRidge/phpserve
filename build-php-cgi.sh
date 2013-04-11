@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget http://us1.php.net/get/php-5.4.13.tar.gz
+wget http://us1.php.net/get/php-5.4.13.tar.gz/from/us2.php.net/mirror
 php_install_dir=$(pwd)/php-dir
 conf_dir=$(pwd)
 tar xfz php-5.4.13.tar.gz
